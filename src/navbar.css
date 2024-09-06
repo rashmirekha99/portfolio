@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../assets/img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+background-color: rgba(255, 255, 255, 0.316);
+    backdrop-filter: blur(10px);
+    height: 80px;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container nav .logo{
+    font-weight: bold;
+}
+
+.container .nav-link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link li:hover{
+    background-color: rgba(255, 255, 255, 0.341);
+        backdrop-filter: blur(15px);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+.container .nav-link li{
+    list-style: none;
+    margin :0.7rem 0.7rem;
+    padding: 1rem;
+   
+}
+
+.container .nav-link ul{
+    display: flex;
+}
+
+.icon{
+    font-size: 0.5rem;
+    cursor: pointer;
+    display: none;
+}
+/* Tab */
+@media (max-width: 900px) {
+    
+        
+    .icon{
+        display: block;
+    }
+
+    
+
+    .container .list {
+        flex-direction: column;
+       
+        justify-content: space-evenly;
+        position:absolute;
+        width:350px;
+        height:60vh;
+        top:-500px;
+        right: 0;
+        /* top:60vh; */
+        background-color: rgba(255, 255, 255, 0.341);
+            backdrop-filter: blur(15px);
+            padding: 0;
+            margin: 0;
+            z-index: 10;
+     
+    }
+
+    .container li{
+        width: 100%;
+        padding-left: 1rem;
+    }
+
+    header{
+        height:3rem;
+    }
+
+    /* .list .active{
+        display: block;
+    } */
+
+.list .active {
+    top:1000px
+}
+   
+}
+
+/* mobile */
+@media (max-width:450px) {
+    .container .list{
+        width: 100%;
+    }
+
+    .container .list{
+        justify-content: flex-start;
+        /* align-items: center; */
+    }
+
+    .container .list li{
+        text-align: center;
+    }
+    
+}
