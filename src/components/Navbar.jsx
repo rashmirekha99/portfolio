@@ -3,30 +3,21 @@ import "../navbar.css";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 function Navbar() {
-  const [isSideBarLoad, setSideBarLoad] = useState(false);
-  const [isOnceClicked, setIsOnceClicked] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  //   const [isOnceClicked, setIsOnceClicked] = useState(false);
   const toggleClick = () => {
-    console.log(isSideBarLoad);
-    setIsOnceClicked(true);
-    setSideBarLoad(!isSideBarLoad);
+    console.log(isOpen);
+    // setIsOnceClicked(true);
+    setIsOpen(!isOpen);
   };
   return (
     <header>
       <div className="container">
-        <nav className="nav-link">
+        <nav>
           <div className="logo">
             <h2>Rashmi Rekha</h2>
           </div>
-          <ul
-            className={isSideBarLoad ? "list active" : "list"}
-            // style={
-            //   isSideBarLoad
-            //     ? { display: "block" }
-            //     : !isSideBarLoad && isOnceClicked
-            //     ? { display: "none" }
-            //     : {}
-            // }
-          >
+          <ul className={isOpen ? "nav-link active" : "nav-link"}>
             <li>
               <a>Home</a>
             </li>
@@ -43,8 +34,8 @@ function Navbar() {
               <a>Contact</a>
             </li>
           </ul>
-          <div className="icon">
-            <GiHamburgerMenu className="menu-icon" onClick={toggleClick} />
+          <div className="icon" onClick={toggleClick}>
+            <GiHamburgerMenu className="menu-icon" />
           </div>
         </nav>
       </div>
