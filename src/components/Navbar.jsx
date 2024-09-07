@@ -2,6 +2,7 @@ import React from "react";
 import "../navbar.css";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import img from "../assets/img/logo.jpg";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   //   const [isOnceClicked, setIsOnceClicked] = useState(false);
@@ -15,7 +16,7 @@ function Navbar() {
       <div className="container">
         <nav>
           <div className="logo">
-            <h2>Rashmi Rekha</h2>
+            <img src={img} />
           </div>
           <ul className={isOpen ? "nav-link active" : "nav-link"}>
             <li>
