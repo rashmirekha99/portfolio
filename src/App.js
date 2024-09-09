@@ -7,6 +7,7 @@ import BackgroundVideo from './components/BackgroundVideo';
 import Heading from './components/Heading';
 import Skills from './components/Skills';
 import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <AboutMe/>
       
       <Skills/>
+      <Footer/>
       
       
     </div>
