@@ -22,7 +22,7 @@ import LangContainer from "./LangContainer";
 
 function AboutUs() {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <h2>My Skills</h2>
       <p>
         I have hands-on experience with a variety of modern technologies and

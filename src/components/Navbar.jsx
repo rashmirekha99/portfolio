@@ -11,6 +11,11 @@ function Navbar() {
     // setIsOnceClicked(true);
     setIsOpen(!isOpen);
   };
+
+  // const scrollToSection = (id) => {
+  //   const section = document.getElementById(id);
+  //   section.scrollIntoView({ behavior: "smooth" });
+  // };
   return (
     <header>
       <div className="container">
@@ -20,16 +25,16 @@ function Navbar() {
           </div>
           <ul className={isOpen ? "nav-link active" : "nav-link"}>
             <li>
-              <a>Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a>About Me</a>
+              <a href="#about_me">About Me</a>
             </li>
             <li>
               <a>Projects</a>
             </li>
             <li>
-              <a>Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
               <a>Contact</a>

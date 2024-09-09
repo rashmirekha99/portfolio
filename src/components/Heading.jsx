@@ -4,7 +4,7 @@ import img from "../assets/img/photo.png";
 
 function Heading() {
   return (
-    <div className="main">
+    <div className="main" id="home">
       <img src={img} />
       <div className="content">
         <p>Hi there 👋 My name is</p>
