@@ -1,0 +1,41 @@
+/* TextAnimation.css */
+.text-container {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    height: auto;
+    /* Adjust to the size of your text */
+    position: relative;
+    color: #5E3BEE;
+    /* color: #eb1466; */
+}
+
+.text-container h1 {
+
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(20) infinite alternate,
+        blink 800ms steps(13) infinite normal;
+    border-right: 3px solid black;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 110%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: rgb(139, 128, 128);
+    }
+
+    to {
+        border-color: transparent;
+    }
+}

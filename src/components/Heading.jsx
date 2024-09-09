@@ -1,6 +1,7 @@
 import React from "react";
 import "./heading.css";
 import img from "../assets/img/photo.png";
+import TextChanger from "./AnimateText";
 
 function Heading() {
   return (
@@ -9,7 +10,11 @@ function Heading() {
       <div className="content">
         <p>Hi there 👋 My name is</p>
         <h1>RASHMI REKHA</h1>
-        <h1>I'm a Software Engineer</h1>
+        <div className="animatedText">
+          <h1>I'm a </h1>
+          <TextChanger />
+        </div>
+
         <p>
           I am a self-motivated, confident, and responsible undergraduate who
           has the ability of hard work and logical thinking and I am a quick
