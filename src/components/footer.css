@@ -25,7 +25,15 @@
     width: 20vw;
     flex-wrap: wrap;
     font-size: 30px;
+    
 }
+
+.footer-icon a{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 
 @media (max-width:1000px){
