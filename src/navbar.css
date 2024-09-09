@@ -39,7 +39,10 @@ header{
     background-color: rgba(255, 255, 255, 0.579);
     opacity:2;
 
-
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 1000;
         backdrop-filter: blur(10px);
     padding: 1rem 0;
     
@@ -99,6 +102,8 @@ text-decoration: none;
 }
 
 @media (max-width:1000px){
+   
+ 
     .icon{
         display: block;
     }
