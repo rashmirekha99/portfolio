@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import BackgroundVideo from './components/BackgroundVideo';
 import Heading from './components/Heading';
+import AboutUs from './components/AboutUs';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
        <BackgroundVideo/>
       <Navbar/>
       <Heading/>
+      <AboutUs/>
       
     </div>
   );

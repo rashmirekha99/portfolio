@@ -1,3 +1,85 @@
+
+
 .about-us{
+    margin-top: 10rem;
+    padding-top: 5rem;
     background-color: white;
+    width: 100%;
+}
+
+.about-us h1,h2{
+    text-align: center;
+}
+
+.about-us h2{
+    font-weight: bold;
+}
+
+.about-us p{
+    margin: 0 10vw 2vw 10vw;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+}
+
+.techno-row {
+   /* background-color: aqua; */
+   
+    margin:4vw 15vw 0 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+   
+
+}
+
+
+.techno-row p{
+color: black;
+}
+
+.lang-container {
+    /* background-color: rgb(216, 147, 147); */
+    height: 10vw;
+    width: 10vw;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    align-items: center;
+    text-wrap: nowrap;
+   
+}
+
+.lang-container p{
+font-size: 18px;
+
+}
+
+.lang-container img{
+    width: 4rem;
+}
+
+@media (max-width:1000px){
+.lang-container{
+    margin: 3rem;
+}
+
+.tools{
+    margin-top: 4rem;
+}
+
+
+
+}
+
+@media (max-width:450px){
+.about-us {
+        margin-top: 0;
+
+    }
+        .lang-container img {
+            width: 3rem;
+        }
 }
