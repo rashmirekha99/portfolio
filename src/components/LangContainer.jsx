@@ -1,5 +1,5 @@
 import React from "react";
-import "./aboutus.css";
+import "./skills.css";
 
 function LangContainer(props) {
   return (

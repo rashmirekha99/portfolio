@@ -17,12 +17,12 @@ import github from "../assets/img/technologies/github.png";
 import netbeans from "../assets/img/technologies/netbeans.png";
 import photoshop from "../assets/img/technologies/photoshop.png";
 import androidstudio from "../assets/img/technologies/android studio.png";
-import "./aboutus.css";
+import "./skills.css";
 import LangContainer from "./LangContainer";
 
 function AboutUs() {
   return (
-    <div className="about-us">
+    <div className="skills">
       <h2>My Skills</h2>
       <p>
         I have hands-on experience with a variety of modern technologies and
