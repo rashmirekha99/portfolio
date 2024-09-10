@@ -94,6 +94,7 @@
 }
 
 .text-box{
+    
     padding: 20px 30px;
     background:#fff ;
     position: relative;
@@ -112,13 +113,18 @@
 
 .text-box h4{
     font-size: 20px;
+    
 }
 .left-container{
-    left: 0;
+    left: -22.5vw;
+    width: 45vw;
 }
+
+
 
 .right-container{
     left:50%;
+    width: 45vw;
 }
 
 .edu-content-sub img{
