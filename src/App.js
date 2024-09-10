@@ -8,6 +8,7 @@ import Heading from './components/Heading';
 import Skills from './components/Skills';
 import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
+import Qualifications from './components/Qualifications';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Navbar/>
       <Heading/>
       <AboutMe/>
-      
+      <Qualifications/>
       <Skills/>
       <Footer/>
       
