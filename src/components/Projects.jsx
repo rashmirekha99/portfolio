@@ -101,7 +101,7 @@ function Projects() {
               setProjectClicked(true);
             }}
           >
-            <img src={img}></img>
+            <img src={img} alt="project"></img>
             <div className="overlay">
               <p>mbsdhfvshvfvasjvfjhas</p>
             </div>
@@ -113,7 +113,7 @@ function Projects() {
               setProjectClicked(true);
             }}
           >
-            <img src={bookswan}></img>
+            <img src={bookswan} alt="project"></img>
           </div>
           <div
             class="item"
@@ -122,7 +122,7 @@ function Projects() {
               setProjectClicked(true);
             }}
           >
-            <img src={grocery}></img>
+            <img src={grocery} alt="project"></img>
           </div>
           <div
             class="item"
@@ -131,7 +131,7 @@ function Projects() {
               setProjectClicked(true);
             }}
           >
-            <img src={cleanConnect}></img>
+            <img src={cleanConnect} alt="project"></img>
           </div>
           <div
             class="item"
@@ -140,7 +140,7 @@ function Projects() {
               setProjectClicked(true);
             }}
           >
-            <img src={pawprint}></img>
+            <img src={pawprint} alt="project"></img>
           </div>
           <div
             class="item"
@@ -149,7 +149,7 @@ function Projects() {
               setProjectClicked(true);
             }}
           >
-            <img src={research}></img>
+            <img src={research} alt="project"></img>
           </div>
         </div>
       </div>

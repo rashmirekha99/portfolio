@@ -15,7 +15,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer-logo">
-        <img src={logo}></img>
+        <img src={logo} alt="logo"></img>
       </div>
       <div className="footer-icon">
         <a href={github} target="_blank">

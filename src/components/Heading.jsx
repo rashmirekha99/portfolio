@@ -6,7 +6,7 @@ import TextChanger from "./AnimateText";
 function Heading() {
   return (
     <div className="main" id="home">
-      <img src={img} />
+      <img src={img} alt="logo" />
       <div className="content">
         <p>Hi there 👋 My name is</p>
         <h1>RASHMI REKHA</h1>

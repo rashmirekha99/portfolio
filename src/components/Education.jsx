@@ -16,7 +16,7 @@ function Education() {
         </div>
       </div>
       <div className="edu-content-sub right-container">
-        <img src={img}></img>
+        <img src={img} alt="circle"></img>
         <div className="text-box">
           <h4>G.C.E. Advanced Level Examination</h4>
           <p>Devi Balika Vidyalaya | 2018</p>
@@ -26,7 +26,7 @@ function Education() {
         </div>
       </div>
       <div className="edu-content-sub left-container">
-        <img src={img}></img>
+        <img src={img} alt="circle"></img>
         <div className="text-box">
           <h4>Lanka Institute Of Technological Studies</h4>
           <p>2016</p>
@@ -39,7 +39,7 @@ function Education() {
         </div>
       </div>
       <div className="edu-content-sub right-container">
-        <img src={img}></img>
+        <img src={img} alt="circle"></img>
         <div className="text-box">
           <h4>G.C.E Ordinary Level Examination</h4>
           <p>Vidyakara Girls ' School - Maharagama - 2015</p>

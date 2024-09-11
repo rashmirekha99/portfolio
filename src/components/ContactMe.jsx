@@ -24,7 +24,7 @@ function ContactMe() {
         <button>Send</button>
       </form>
       <div className="contact-image">
-        <img src={img}></img>
+        <img src={img} alt="contact_image"></img>
       </div>
     </div>
   );

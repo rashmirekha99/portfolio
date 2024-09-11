@@ -21,7 +21,7 @@ function Navbar() {
       <div className="container">
         <nav>
           <div className="logo">
-            <img src={img} />
+            <img src={img} alt="logo" />
           </div>
           <ul className={isOpen ? "nav-link active" : "nav-link"}>
             <li>

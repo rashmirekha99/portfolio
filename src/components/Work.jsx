@@ -16,7 +16,7 @@ function Work() {
         </div>
       </div>
       <div className="edu-content-sub right-container">
-        <img src={img}></img>
+        <img src={img} alt="education"></img>
         <div className="text-box">
           <h4>Intern Software Engineer</h4>
           <p>Hasthiya IT I 2022 Dec-2023 June </p>
