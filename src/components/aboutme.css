@@ -45,7 +45,7 @@ margin-top: 10rem;
 }
 
 .about-me-content{
-    /* background-color: #5E3BEE; */
+    /* background-color: var(--primary); */
     float: left;
     width: 50vw;
     height: 100vh;
@@ -63,7 +63,7 @@ margin-top: 10rem;
 
 
 .about-me-content button {
-    background-color: #5E3BEE;
+    background-color: var(--primary);
     color: white;
     border-radius: 5px;
     padding: 20px;
@@ -74,7 +74,7 @@ margin-top: 10rem;
 .about-me  h1,h2,p,img,button {
     animation: appear linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 30%;
+        animation-range: entry 0% cover 20%;
 }
 
 

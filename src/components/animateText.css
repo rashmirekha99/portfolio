@@ -7,7 +7,7 @@
     height: auto;
     /* Adjust to the size of your text */
     position: relative;
-    color: #5E3BEE;
+    color: var(--primary);
     /* color: #eb1466; */
 }
 
