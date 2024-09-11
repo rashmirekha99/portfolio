@@ -37,7 +37,7 @@ function Navbar() {
               <a href="#skills">Skills</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
           <div className="icon" onClick={toggleClick}>

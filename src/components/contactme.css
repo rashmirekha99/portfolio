@@ -1,0 +1,78 @@
+.contact-me{
+    background-color: rgba(255, 255, 255, 0.451);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    padding-top: 3rem;
+
+}
+.contact-me h1{
+    font-weight: bold;
+}
+
+.form{
+    background-color: rgba(255, 255, 255, 0.619);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 2px solid var(--primary);
+    box-shadow: 2px 4px 8px rgba(128, 128, 128, 0.697);
+    padding: 3rem;
+    display: grid;
+    
+        gap: 0px;
+        float: left;
+            width: auto;
+            height: auto;
+            /* background-color: aqua; */
+            margin-left: 10vw;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+}
+
+
+
+.contact-image{
+    position: relative;
+    float: right;
+    top: 0;
+    width: 50%;
+    padding: 5rem;
+    /* background-color: blue; */
+   
+   
+}
+.contact-image img{
+    /* position: absolute; */
+    
+    width: 100%;
+/* animation: moveImage 5s linear infinite; */
+}
+
+
+.form input,textarea{
+    
+    background-color: rgba(255, 255, 255, 0.53);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 10px;
+    border:2px solid var(--primary);
+    box-shadow: 2px 4px 8px rgba(128, 128, 128, 0.536);
+    width: 35vw;
+}
+
+.form textarea{
+    height: 7rem;
+}
+
+.form button{
+    /* margin-top: 10px; */
+    background: var(--primary);
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        width: 35vw;
+        border: none;
+        font-size: 20px;
+
+}

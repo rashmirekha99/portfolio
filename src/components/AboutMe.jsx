@@ -6,7 +6,7 @@ function AboutMe() {
   return (
     <div className="about-me" id="about_me">
       <div className="about-me-image">
-        <img className="image-me" src={img}></img>
+        <img className="image-me" src={img} alt="my_image"></img>
       </div>
       <div className="about-me-content">
         <h1>About Me 👋</h1>

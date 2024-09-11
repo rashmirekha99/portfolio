@@ -10,6 +10,7 @@ import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 import Qualifications from './components/Qualifications';
 import Projects from './components/Projects';
+import ContactMe from './components/ContactMe';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Qualifications/>
       <Skills/>
       <Projects/>
+      <ContactMe/>
       <Footer/>
       
       

@@ -6,7 +6,7 @@ function Education() {
   return (
     <div className="edu-content">
       <div className="edu-content-sub left-container">
-        <img src={img}></img>
+        <img src={img} alt="my_photo_2"></img>
         <div className="text-box">
           <h4>BSc.(Hons.) in Information Technology & Management</h4>
           <p>University of Moratuwa | 2024</p>
