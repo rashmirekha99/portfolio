@@ -154,7 +154,8 @@
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-left: 15px solid white;
-    right:-15px
+    right:-15px;
+    visibility: visible;
 
 
 }
@@ -167,8 +168,43 @@
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-right: 15px solid white;
-    left:-15px
+    left:-15px;
+    visibility: visible;
 
 
+}
+
+
+@media (max-width:450px){
+    .button-container button{
+        width: 100px;
+        padding: 0;
+    }
+
+    .right-container{
+        left: 0;
+            width:100%;
+    }
+        .left-container {
+            left: 0;
+            width: 100%;
+        }
+
+                .left-container-arrow  {
+                    visibility: hidden;
+                }
+                                .right-container-arrow{
+                                    visibility: hidden;
+                                }
+
+                                .edu-content-sub img{
+                                    visibility: hidden;
+                                }
+        .edu-content {
+            
+            margin: 50px auto;
+    
+    
+        }
 }
 
