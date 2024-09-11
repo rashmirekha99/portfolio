@@ -8,7 +8,7 @@ function Heading() {
     <div className="main" id="home">
       <img src={img} alt="logo" />
       <div className="content">
-        <p>Hi there 👋 My name is</p>
+        <p className="hi">Hi there 👋 My name is</p>
         <h1>RASHMI REKHA</h1>
         <div className="animatedText">
           <h1>I'm a </h1>

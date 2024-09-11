@@ -15,8 +15,9 @@
 
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 2s steps(20) infinite alternate,
-        blink 800ms steps(13) infinite normal;
+    transition: 2s;
+    /* animation: typewriter 2s steps(20) infinite alternate,
+        blink 800ms steps(13) infinite normal; */
     border-right: 3px solid black;
 }
 

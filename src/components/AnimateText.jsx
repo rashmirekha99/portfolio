@@ -11,7 +11,7 @@ const TextChanger = () => {
     const intervalId = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % texts.length); // Update the index safely
       setCurrentText(texts[index]); // Set the new text based on the updated index
-    }, 3100); // Change text every 4 seconds
+    }, 2000); // Change text every 4 seconds
 
     return () => clearInterval(intervalId); // Clear the interval on component unmount
   }, [index, texts]);
