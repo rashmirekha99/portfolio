@@ -104,6 +104,12 @@ content: "";
     .project-grid{
         padding: 0;
     }
+
+        .project-grid{
+            gap: 2px;
+        }
+
+        
 }
 
 

@@ -4,7 +4,7 @@ import "./backgroundVideo.css";
 const BackgroundVideo = () => {
   return (
     <div className="video-container">
-      <video autoPlay loop muted>
+      <video autoPlay loop muted playsinline>
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
