@@ -4,7 +4,7 @@ import "./animateText.css"; // We'll define the animations here
 const TextChanger = () => {
   const [currentText, setCurrentText] = useState("Software Engineer");
   const [index, setIndex] = useState(0);
-  const texts = ["Software Engineer", "Frontend Developer", "Mobile Developer"];
+  const texts = ["Software Engineer", "Frontend Engineer", "Mobile Developer"];
   //   let index = 0;
 
   useEffect(() => {

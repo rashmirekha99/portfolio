@@ -175,7 +175,7 @@
 }
 
 
-@media (max-width:450px){
+@media (max-width:720px){
     .button-container button{
         width: 100px;
         padding: 0;

@@ -33,7 +33,7 @@ function AboutUs() {
       <h1>Technologies</h1>
       <div className="techno-row">
         {/* <div className="techno-col"> */}
-        <LangContainer img={c} lang="C Programming" />
+        <LangContainer img={c} lang="C" />
         <LangContainer img={java} lang="Java" />
         <LangContainer img={html} lang="HTML" />
         <LangContainer img={css} lang="CSS" />
