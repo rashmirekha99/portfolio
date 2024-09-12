@@ -23,20 +23,20 @@ function Navbar() {
           <div className="logo">
             <img src={img} alt="logo" />
           </div>
-          <ul className={isOpen ? "nav-link active" : "nav-link"}>
-            <li>
+          <ul className={isOpen ? "nav-link active mobile" : "nav-link"}>
+            <li onClick={toggleClick}>
               <a href="#home">Home</a>
             </li>
-            <li>
+            <li onClick={toggleClick}>
               <a href="#about_me">About Me</a>
             </li>
-            <li>
+            <li onClick={toggleClick}>
               <a href="#projects">Projects</a>
             </li>
-            <li>
+            <li onClick={toggleClick}>
               <a href="#skills">Skills</a>
             </li>
-            <li>
+            <li onClick={toggleClick}>
               <a href="#contact">Contact</a>
             </li>
           </ul>

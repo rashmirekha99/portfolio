@@ -102,9 +102,9 @@
     border-radius: 6px;
     /* font-size: 15px; */
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-    animation: appear linear;
+    /* animation: appear linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 30%;
+        animation-range: entry 0% cover 30%; */
     
 }
 .text-box p{
