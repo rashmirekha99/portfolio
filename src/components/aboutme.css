@@ -17,6 +17,7 @@ html{
 }
 
 .about-me{
+    /* background-color: aqua; */
     width: 100vw;
     height: 100vh;
 margin-top: 10rem;
@@ -25,7 +26,7 @@ margin-top: 10rem;
 }
 
 .about-me-image{
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,6 +85,8 @@ margin-top: 10rem;
         display: block;
         line-height: normal;
         list-style: 2px;
+        margin-top: 0;
+        /* height: 100vh; */
         
 
     }
@@ -94,6 +97,9 @@ margin-top: 10rem;
         text-align: center;
         font-size:medium;
         padding-top: 2vh;
+        padding-bottom: 5vh;
+        /* background-color: black; */
+        height: max-content;
     }
     .about-me-image{
         padding-top: 2rem;
@@ -109,13 +115,19 @@ margin-top: 10rem;
     }
 
         .about-me-content {
+            
             width: 100vw;
             justify-content:flex-start;
             align-items: center;
             text-align: center;
             font-size: small;
             padding-top: 2vh;
+            height: max-content;
         }
+
+                .about-me{
+                    height: max-content;
+                }
 
 }
 
