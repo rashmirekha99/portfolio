@@ -76,3 +76,71 @@
         font-size: 20px;
 
 }
+
+
+@media (max-width:450px){
+    .contact-image{
+        visibility: visible;
+        width: 100%;
+    }
+
+    .form{
+            width: 100vw;
+            margin: 0;
+            border:none;
+            border-radius: 0;
+    }
+
+    .contact-me{
+        flex-direction: column;
+    }
+
+        .form input,
+        textarea {
+    
+           
+            width: 100%;
+        }
+
+                .form button {
+                   
+                    width: 100%;
+                    
+                    margin-top: 20px;
+        
+                }
+}
+
+@media (max-width:1000px) {
+    .contact-image {
+        visibility: hidden;
+        width: 0%;
+    }
+
+    .form {
+        width: 80vw;
+        margin: 0;
+        /* border: none;
+        border-radius: 0; */
+    }
+
+    .contact-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form input,
+    textarea {
+
+
+        width: 100%;
+    }
+
+    .form button {
+
+        width: 100%;
+
+        margin-top: 20px;
+
+    }
+}
