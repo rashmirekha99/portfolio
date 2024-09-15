@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./heading.css";
 import img from "../assets/img/photo.png";
 import TextChanger from "./AnimateText";
@@ -21,7 +22,10 @@ function Heading() {
           learner working with enthusiasm. I particularly enjoy collaborative
           teamwork, where I can contribute and learn alongside others.
         </p>
-        <button>Get in Touch</button>
+        <a href="#contact">
+          {" "}
+          <button>Get in Touch</button>
+        </a>
       </div>
     </div>
   );

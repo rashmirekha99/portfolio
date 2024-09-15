@@ -11,7 +11,7 @@ function Education() {
           <h4>BSc.(Hons.) in Information Technology & Management</h4>
           <p>University of Moratuwa | 2024</p>
 
-          <p>GPA : 3.45</p>
+          {/* <p>Graduated with Second Class Upper Division</p> */}
           <span className="left-container-arrow"></span>
         </div>
       </div>
@@ -32,8 +32,9 @@ function Education() {
           <p>2016</p>
 
           <p>
-            Software Engineering Course - Diploma Level Computer Science -
-            Certificate Level Graphic Designing Course - Certificate Level
+            Software Engineering Course - Diploma Level
+            <br /> Computer Science - Certificate Level <br />
+            Graphic Designing Course - Certificate Level
           </p>
           <span className="left-container-arrow"></span>
         </div>

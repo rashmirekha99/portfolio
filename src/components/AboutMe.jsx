@@ -28,7 +28,9 @@ function AboutMe() {
           always up for a challenge and love collaborating with others to create
           something amazing 🌟. Let’s build something incredible together! 🚀✨
         </p>
-        <button>Get in Touch</button>
+        <a href="#contact">
+          <button>Get in Touch</button>
+        </a>
       </div>
     </div>
   );
