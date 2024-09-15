@@ -3,8 +3,12 @@
     
    
 }
+.projects h1{
+    font-weight: bold;
+}
 .projects p{
     font-size: var(--web-body-font);
+   text-align: justify;
 }
 .project-section{
     display: flex;

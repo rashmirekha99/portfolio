@@ -28,7 +28,7 @@ function AboutUs() {
         I have hands-on experience with a variety of modern technologies and
         tools across software development. My expertise covers both frontend and
         backend technologies, ensuring the delivery of high-quality, efficient,
-        and scalable solutions. Below are the key technologies I work with:
+        and scalable solutions. Below are the key technologies I work with
       </p>
       <h1>Technologies</h1>
       <div className="techno-row">

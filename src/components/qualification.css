@@ -9,7 +9,9 @@
     
 }
 
-
+.quallifications h1{
+    font-weight: bold;
+}
 
 .button-container{
     display: flex;
@@ -209,3 +211,13 @@
         }
 }
 
+@media (max-width:450px){
+    .text-box h4 {
+            font-size: var(--mobile-heading-font);
+    
+        }
+
+        .text-box p{
+            font-size: var(--mobile-body-font);
+        }
+}

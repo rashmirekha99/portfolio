@@ -132,4 +132,8 @@ font-size: 18px;
                                     font-size: 14px;
                 
                                 }
+
+                                                                .skills p {
+                                                                    font-size: var(--mobile-body-font);
+                                                                }
 }
