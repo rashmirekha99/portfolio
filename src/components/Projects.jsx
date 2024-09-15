@@ -189,7 +189,9 @@ function Projects() {
           </p>
           <ul>
             {ProjectDetails[projectNo].responsibilities.map((res) => (
-              <li>{res}</li>
+              <li>
+                <p>{res}</p>
+              </li>
             ))}
           </ul>
         </alert>

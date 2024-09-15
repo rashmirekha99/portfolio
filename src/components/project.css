@@ -181,7 +181,8 @@ animation: enlarge 0.5s ease forwards;
 
 @media (max-width:450px) {
     .pop-up h1 {
-            font-size: 15px;
+            font-size: var(--mobile-heading-font);
+            font-weight: bold;
         }
     
         .project-text {
@@ -191,7 +192,7 @@ animation: enlarge 0.5s ease forwards;
         }
     
         .pop-up p {
-            font-size: 12px;
+            font-size: var(--mobile-body-font);
         }
         .pop-up.pop-up.active{
             padding:50px 20px;
