@@ -22,9 +22,15 @@ const FadeInX = ({
   </motion.div>
 );
 
-const FadeInY = ({ children, delay = 0, duration = 0.5, ...props }) => (
+const FadeInY = ({
+  children,
+  delay = 0,
+  duration = 0.5,
+  side = 200,
+  ...props
+}) => (
   <motion.div
-    initial={{ y: 200, opacity: 0 }}
+    initial={{ y: side, opacity: 0 }}
     whileInView={{ y: 0, opacity: 1 }}
     transition={{
       delay: delay,

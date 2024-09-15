@@ -19,47 +19,60 @@ import photoshop from "../assets/img/technologies/photoshop.png";
 import androidstudio from "../assets/img/technologies/android studio.png";
 import "./skills.css";
 import LangContainer from "./LangContainer";
-
+import { FadeInY } from "./animation/Animations";
 function AboutUs() {
   return (
     <div className="skills" id="skills">
-      <h2>My Skills</h2>
-      <p>
-        I have hands-on experience with a variety of modern technologies and
-        tools across software development. My expertise covers both frontend and
-        backend technologies, ensuring the delivery of high-quality, efficient,
-        and scalable solutions. Below are the key technologies I work with
-      </p>
-      <h1>Technologies</h1>
-      <div className="techno-row">
-        {/* <div className="techno-col"> */}
-        <LangContainer img={c} lang="C" />
-        <LangContainer img={java} lang="Java" />
-        <LangContainer img={html} lang="HTML" />
-        <LangContainer img={css} lang="CSS" />
-        <LangContainer img={js} lang="Javascript" />
-        <LangContainer img={react} lang="React" />
-        <LangContainer img={flutter} lang="Flutter" />
-        <LangContainer img={python} lang="Python" />
-        <LangContainer img={mysql} lang="My SQL" />
-        <LangContainer img={mysql} lang="My SQL" />
-        {/* </div> */}
-      </div>
-      <h1>Tools</h1>
-      <div className="techno-row tools">
-        {/* <div className="techno-col"> */}
-        <LangContainer img={jira} lang="Jira" />
-        <LangContainer img={trello} lang="Trello" />
-        <LangContainer img={photoshop} lang="Photoshop" />
-        <LangContainer img={netbeans} lang="Netbeans" />
-        <LangContainer img={figma} lang="Figma" />
-        <LangContainer img={github} lang="Github" />
-        <LangContainer img={androidstudio} lang="Android Studio" />
-        <LangContainer img={python} lang="Python" />
-        <LangContainer img={mysql} lang="My SQL" />
-        <LangContainer img={mysql} lang="My SQL" />
-        {/* </div> */}
-      </div>
+      <FadeInY delay={0.1} duration={0.1} side={100}>
+        <h2>My Skills</h2>
+      </FadeInY>
+      <FadeInY delay={0.1} duration={0.3} side={100}>
+        <p>
+          I have hands-on experience with a variety of modern technologies and
+          tools across software development. My expertise covers both frontend
+          and backend technologies, ensuring the delivery of high-quality,
+          efficient, and scalable solutions. Below are the key technologies I
+          work with
+        </p>
+      </FadeInY>
+      <FadeInY delay={0.1} duration={0.5} side={100}>
+        <h1>Technologies</h1>
+      </FadeInY>
+      <FadeInY delay={0.1} duration={0.7} side={100}>
+        <div className="techno-row">
+          {/* <div className="techno-col"> */}
+          <LangContainer img={c} lang="C" />
+          <LangContainer img={java} lang="Java" />
+          <LangContainer img={html} lang="HTML" />
+          <LangContainer img={css} lang="CSS" />
+          <LangContainer img={js} lang="Javascript" />
+          <LangContainer img={react} lang="React" />
+          <LangContainer img={flutter} lang="Flutter" />
+          <LangContainer img={python} lang="Python" />
+          <LangContainer img={mysql} lang="My SQL" />
+          <LangContainer img={mysql} lang="My SQL" />
+          {/* </div> */}
+        </div>
+      </FadeInY>
+      <FadeInY delay={0.1} duration={0.8} side={100}>
+        <h1>Tools</h1>
+      </FadeInY>
+      <FadeInY delay={0.1} duration={1} side={100}>
+        <div className="techno-row tools">
+          {/* <div className="techno-col"> */}
+          <LangContainer img={jira} lang="Jira" />
+          <LangContainer img={trello} lang="Trello" />
+          <LangContainer img={photoshop} lang="Photoshop" />
+          <LangContainer img={netbeans} lang="Netbeans" />
+          <LangContainer img={figma} lang="Figma" />
+          <LangContainer img={github} lang="Github" />
+          <LangContainer img={androidstudio} lang="Android Studio" />
+          <LangContainer img={python} lang="Python" />
+          <LangContainer img={mysql} lang="My SQL" />
+          <LangContainer img={mysql} lang="My SQL" />
+          {/* </div> */}
+        </div>
+      </FadeInY>
     </div>
   );
 }
