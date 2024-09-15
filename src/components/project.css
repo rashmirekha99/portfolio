@@ -128,6 +128,11 @@ content: "";
     
 
 }
+
+.projects p{
+    margin: 0 10px;
+    text-align: center;
+}
         
 }
 
