@@ -8,7 +8,7 @@ import pawprint from "../assets/img/projects/pawprint.jpg";
 import portfolio from "../assets/img/projects/portfolio.jpg";
 
 import { IoCloseSharp } from "react-icons/io5";
-import { Color } from "antd/es/color-picker";
+import { FadeInX, FadeInY } from "./animation/Animations";
 
 function Projects() {
   const [isProjectClicked, setProjectClicked] = useState(false);
@@ -91,70 +91,87 @@ function Projects() {
         id="projects"
         onClick={() => setProjectClicked(isProjectClicked ? false : true)}
       >
-        <h1>Projects</h1>
-        <p>
-          Check out my projects that show my skills in design and development.
-          Each one highlights my focus on creating practical and innovative
-          solutions
-        </p>
+        <FadeInX delay={0.2} duration={0.1} side={-100}>
+          {" "}
+          <h1>Projects</h1>
+        </FadeInX>
+        <FadeInX delay={0.4} duration={0.1} side={100}>
+          <p>
+            Check out my projects that show my skills in design and development.
+            Each one highlights my focus on creating practical and innovative
+            solutions
+          </p>
+        </FadeInX>
         <div className="project-grid">
-          <div
-            class="item"
-            onClick={() => {
-              setProjectNo(0);
-              setProjectClicked(true);
-            }}
-          >
-            <img src={img} alt="project"></img>
-            <div className="overlay">
-              <p>mbsdhfvshvfvasjvfjhas</p>
+          <FadeInY delay={0.2} duration={0.3} side={100}>
+            <div
+              class="item"
+              onClick={() => {
+                setProjectNo(0);
+                setProjectClicked(true);
+              }}
+            >
+              <img src={img} alt="project"></img>
+              <div className="overlay">
+                <p>mbsdhfvshvfvasjvfjhas</p>
+              </div>
             </div>
-          </div>
-          <div
-            class="item"
-            onClick={() => {
-              setProjectNo(1);
-              setProjectClicked(true);
-            }}
-          >
-            <img src={bookswan} alt="project"></img>
-          </div>
-          <div
-            class="item"
-            onClick={() => {
-              setProjectNo(2);
-              setProjectClicked(true);
-            }}
-          >
-            <img src={grocery} alt="project"></img>
-          </div>
-          <div
-            class="item"
-            onClick={() => {
-              setProjectNo(3);
-              setProjectClicked(true);
-            }}
-          >
-            <img src={cleanConnect} alt="project"></img>
-          </div>
-          <div
-            class="item"
-            onClick={() => {
-              setProjectNo(4);
-              setProjectClicked(true);
-            }}
-          >
-            <img src={pawprint} alt="project"></img>
-          </div>
-          <div
-            class="item"
-            onClick={() => {
-              setProjectNo(5);
-              setProjectClicked(true);
-            }}
-          >
-            <img src={portfolio} alt="project"></img>
-          </div>
+          </FadeInY>
+          <FadeInY delay={0.4} duration={0.3} side={100}>
+            <div
+              class="item"
+              onClick={() => {
+                setProjectNo(1);
+                setProjectClicked(true);
+              }}
+            >
+              <img src={bookswan} alt="project"></img>
+            </div>
+          </FadeInY>
+          <FadeInY delay={0.6} duration={0.4} side={100}>
+            <div
+              class="item"
+              onClick={() => {
+                setProjectNo(2);
+                setProjectClicked(true);
+              }}
+            >
+              <img src={grocery} alt="project"></img>
+            </div>
+          </FadeInY>
+          <FadeInY delay={0.2} duration={0.3} side={100}>
+            <div
+              class="item"
+              onClick={() => {
+                setProjectNo(3);
+                setProjectClicked(true);
+              }}
+            >
+              <img src={cleanConnect} alt="project"></img>
+            </div>
+          </FadeInY>
+          <FadeInY delay={0.3} duration={0.4} side={100}>
+            <div
+              class="item"
+              onClick={() => {
+                setProjectNo(4);
+                setProjectClicked(true);
+              }}
+            >
+              <img src={pawprint} alt="project"></img>
+            </div>
+          </FadeInY>
+          <FadeInY delay={0.4} duration={0.5} side={100}>
+            <div
+              class="item"
+              onClick={() => {
+                setProjectNo(5);
+                setProjectClicked(true);
+              }}
+            >
+              <img src={portfolio} alt="project"></img>
+            </div>
+          </FadeInY>
         </div>
       </div>
       {/* {isProjectClicked ? <PopUp /> : null} */}
