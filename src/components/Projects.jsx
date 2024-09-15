@@ -155,7 +155,7 @@ function Projects() {
       </div>
       {/* {isProjectClicked ? <PopUp /> : null} */}
       {isProjectClicked ? (
-        <div className={isProjectClicked ? "pop-up active" : "pop-up"}>
+        <alert className={isProjectClicked ? "pop-up active" : "pop-up"}>
           <div className="close-container">
             <IoCloseSharp
               className="close-icon"
@@ -186,7 +186,7 @@ function Projects() {
               <li>{res}</li>
             ))}
           </ul>
-        </div>
+        </alert>
       ) : null}
     </div>
   );

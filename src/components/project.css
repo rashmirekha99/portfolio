@@ -1,5 +1,6 @@
 .projects{
     position: relative;
+    
    
 }
 .project-section{
@@ -90,12 +91,18 @@ content: "";
     .project-grid{
         grid-template-columns: repeat(2, 1fr);
     }
-
+.pop-up.active {
+    position: fixed;
+    top: 25%;
+    
+}
 }
 @media (max-width:700px) {
     .project-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    
 
         
 }
@@ -123,14 +130,14 @@ content: "";
     position: absolute;
     width: auto;
     height: auto;
-    top: 23vh;
-        /* bottom: 50px; */
+    top: 50px;
+       
         left: 20vw;
         right:20vw;
     
     background-color: rgba(255, 255, 255, 0.845);
     backdrop-filter: blur(10px);
-    /* margin: 0 5rem; */
+
     padding: 50px;
     border-radius: 50px;
     display: flex;
@@ -139,7 +146,7 @@ content: "";
     align-items: start;
     border: 3px solid white;
     box-shadow: 2px 4px 8px rgba(128, 128, 128, 0.323);
-    
+    z-index: 2;
 animation: enlarge 0.5s ease forwards;
 }
 
@@ -182,6 +189,12 @@ animation: enlarge 0.5s ease forwards;
     
         .pop-up p {
             font-size: 12px;
+        }
+        .pop-up.pop-up.active{
+            padding:50px 20px;
+            border-radius: 30px;
+            left: 10vw;
+                right: 10vw;
         }
 }
 
