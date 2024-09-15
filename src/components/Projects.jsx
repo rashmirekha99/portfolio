@@ -80,6 +80,7 @@ function Projects() {
         "Design the website",
         "Develop the website ensuring the responsiveness",
       ],
+      group: false,
     },
   ];
 
@@ -167,7 +168,9 @@ function Projects() {
           </div>
 
           <h1>{ProjectDetails[projectNo].name}</h1>
-          <p style={{ color: "grey", paddingTop: 0 }}>Group Project</p>
+          <p style={{ color: "grey", paddingTop: 0 }}>
+            {projectNo == 5 ? "Individual Project" : "Group Project"}
+          </p>
           <p>
             <span className="project-text">About Project:</span>{" "}
             {ProjectDetails[projectNo].about}
