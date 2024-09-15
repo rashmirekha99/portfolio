@@ -14,7 +14,7 @@ function AboutMe() {
             delay: 0.2,
             x: { type: "spring", stiffness: 60 },
             ease: "easeIn",
-            duration: 0.5,
+            duration: 0.2,
           }}
           className="image-me"
           src={img}
@@ -45,21 +45,25 @@ function AboutMe() {
           }}
         >
           Hey there! I’m Rashmi Rekha, <br />
-          <br />a passionate software developer 🚀 with a love for creating
-          innovative and user-friendly solutions. My expertise spans both
-          frontend 🎨 and backend ⚙️ development, allowing me to build seamless
-          experiences from start to finish. I’m all about turning ideas 💡 into
-          reality with clean, efficient code and a creative touch.
           <br />
-          <br /> I work with a variety of technologies, including ReactJS ,
-          Flutter , Node.js , and CSS . My mission is to deliver digital
-          experiences that not only function flawlessly but also make users'
-          lives easier and more enjoyable 😄. <br />
+          🎓 A proud graduate of the University of Moratuwa, I am passionate
+          about developing innovative and user-friendly solutions 💡. A quick
+          learner 🚀, I constantly explore new ways to solve problems and
+          embrace challenges with curiosity.
+          <br /> <br />
+          I love working in teams 🤝, collaborating on projects, and sharing
+          knowledge to help others grow 🌱. I’m always open to advice and
+          feedback, as I believe learning from others helps me grow and evolve
+          continuously 📚. Whether it’s adapting to new environments or learning
+          fresh technologies, I thrive on flexibility and continuous
+          improvement.
           <br />
-          When I’m not coding 💻, you’ll find me exploring the latest tech
-          trends 📱, reading 📚, or brainstorming my next big idea 🤔. I’m
-          always up for a challenge and love collaborating with others to create
-          something amazing 🌟. Let’s build something incredible together! 🚀✨
+          <br /> From web to mobile 💻📱, I’m dedicated to building in creating
+          attractive, convenient, and efficient web and mobile solutions, always
+          striving to build digital experiences that leave a lasting impact.
+          Let’s build something incredible together! 🚀✨
+          <br />
+          <br />
         </motion.p>
         <a href="#contact">
           <motion.button
