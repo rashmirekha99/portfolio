@@ -1,42 +1,91 @@
-/* TextAnimation.css */
-.text-container {
-    font-size: 24px;
-    font-weight: bold;
-    display: inline-block;
-    overflow: hidden;
-    height: auto;
-    /* Adjust to the size of your text */
-    position: relative;
-    color: var(--primary);
-    /* color: #eb1466; */
+.text_1 {
+    animation: text1;
 }
 
-.text-container h1 {
+.text_2 {
+    animation: text2;
+}
 
-    white-space: nowrap;
+.text_3{
+    animation: text3;
+}
+
+.text_1,
+.text_2,
+.text_3 {
+    color: var(--primary);
     overflow: hidden;
-    transition: 2s;
-    /* animation: typewriter 2s steps(20) infinite alternate,
-        blink 800ms steps(13) infinite normal; */
-    border-right: 3px solid black;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(17, end);
+    animation-iteration-count: infinite;
+}
+
+.text_1::after,
+.text_2::after {
+    content: "|";
+    color: grey;
+    
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
 }
 
 @keyframes typewriter {
-    from {
-        width: 0%;
+
+    0%,
+    100% {
+        width: 0;
     }
 
-    to {
-        width: 110%;
+    20%,
+    80% {
+        width: 4em;
     }
 }
 
-@keyframes blink {
-    from {
-        border-color: rgb(139, 128, 128);
+@keyframes caret {
+
+    0%,
+    100% {
+        opacity: 0;
     }
 
-    to {
-        border-color: transparent;
+    50% {
+        opacity: 1;
     }
 }
+
+
+@keyframes text2 {
+
+    0%,
+    50%,
+    100% {
+        width: 0;
+    }
+
+    60%,
+    90% {
+        width: 10em;
+    }
+}
+
+@keyframes text1 {
+
+    0%,
+    50%,
+    100% {
+        width: 0;
+    }
+
+    10%,
+    40% {
+        width: 10em;
+    }
+}
+

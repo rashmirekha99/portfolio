@@ -7,18 +7,12 @@ const TextChanger = () => {
   const texts = ["Software Engineer", "Frontend Engineer", "Mobile Developer"];
   //   let index = 0;
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % texts.length); // Update the index safely
-      setCurrentText(texts[index]); // Set the new text based on the updated index
-    }, 2000); // Change text every 4 seconds
-
-    return () => clearInterval(intervalId); // Clear the interval on component unmount
-  }, [index, texts]);
-
   return (
     <div className="text-container">
-      <h1 className="animated-text"> &nbsp;{currentText}</h1>
+      <h1>
+        <span class="text_1"> &nbsp; Software Engineer</span>
+        <span class="text_2">&nbsp; Mobile Developer</span>
+      </h1>
     </div>
   );
 };
