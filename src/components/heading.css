@@ -1,7 +1,3 @@
-:root {
-   --primary:#990465;
-
-}
 
 html,
 body {
@@ -16,11 +12,16 @@ body {
     
     
 
+
+}
+
+.sub-text{
+    font-size: var(--web-body-font);
 }
 
 .content p:first-child{
     
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .content{

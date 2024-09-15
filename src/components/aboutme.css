@@ -61,6 +61,10 @@ margin-top: 10rem;
       
 }
 
+.about-me-content p{
+    font-size: var(--web-body-font);
+}
+
 
 
 .about-me-content button {
@@ -128,6 +132,7 @@ margin-top: 10rem;
                 .about-me{
                     height: max-content;
                 }
+                           
 
 }
 

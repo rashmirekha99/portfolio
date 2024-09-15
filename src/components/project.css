@@ -3,6 +3,9 @@
     
    
 }
+.projects p{
+    font-size: var(--web-body-font);
+}
 .project-section{
     display: flex;
     flex-direction: column;
@@ -130,7 +133,7 @@ content: "";
     position: absolute;
     width: auto;
     height: auto;
-    top: 50px;
+    top: 100px;
        
         left: 20vw;
         right:20vw;

@@ -5,7 +5,7 @@ import bookswan from "../assets/img/projects/bookswan.jpg";
 import grocery from "../assets/img/projects/groceryListing.jpg";
 import cleanConnect from "../assets/img/projects/cleanConnect.jpg";
 import pawprint from "../assets/img/projects/pawprint.jpg";
-import research from "../assets/img/projects/research.jpg";
+import portfolio from "../assets/img/projects/portfolio.jpg";
 
 import { IoCloseSharp } from "react-icons/io5";
 import { Color } from "antd/es/color-picker";
@@ -71,12 +71,15 @@ function Projects() {
       responsibilities: ["Convert Figma Design to code", "API Integration"],
     },
     {
-      name: "Sinhala Sign Translation Uisng Machine Learning",
+      name: "Portfolio Website",
       about:
-        "A research project focused on translating Sinhala sign language into text, incorporating crucial factors such as facial expression recognition",
-      role: "Research about facial expression recognition",
-      technologies: "Python",
-      responsibilities: ["Facial expression Recognition Module"],
+        "A portfolio website that showcases my skills, experience, and background, offering a comprehensive view of who I am as a professional. It includes a responsive design, ensuring an optimal viewing experience on any device",
+      role: "Develop Full Website",
+      technologies: "ReactJs",
+      responsibilities: [
+        "Design the website",
+        "Develop the website ensuring the responsiveness",
+      ],
     },
   ];
 
@@ -149,7 +152,7 @@ function Projects() {
               setProjectClicked(true);
             }}
           >
-            <img src={research} alt="project"></img>
+            <img src={portfolio} alt="project"></img>
           </div>
         </div>
       </div>

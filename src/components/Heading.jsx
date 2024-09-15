@@ -15,7 +15,7 @@ function Heading() {
           <TextChanger />
         </div>
 
-        <p>
+        <p className="sub-text">
           I am a self-motivated, confident, and responsible undergraduate who
           has the ability of hard work and logical thinking and I am a quick
           learner working with enthusiasm. I particularly enjoy collaborative
