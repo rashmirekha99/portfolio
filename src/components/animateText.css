@@ -6,13 +6,10 @@
     animation: text2;
 }
 
-.text_3{
-    animation: text3;
-}
 
 .text_1,
-.text_2,
-.text_3 {
+.text_2
+ {
     color: var(--primary);
     overflow: hidden;
     white-space: nowrap;
@@ -24,7 +21,8 @@
 }
 
 .text_1::after,
-.text_2::after {
+.text_2::after
+ {
     content: "|";
     color: grey;
     
