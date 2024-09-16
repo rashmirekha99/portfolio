@@ -46,32 +46,35 @@ function App() {
     }
   }, []);
 
-
+//Check samsung version
+// version 26.o above has fixed dark theme issue
 
   const [samsungVersion, setSamsungVersion] = useState("initial");
 
   useEffect(() => {
     const userAgent = navigator.userAgent;
-    alert('User Agent:', userAgent); // For debugging
+    // alert('User Agent:', userAgent); // For debugging
 
     // Refined regex pattern to capture Samsung Internet version
     const samsungBrowserMatch = userAgent.match(/SamsungBrowser\/([\d.]+)/);
-    alert(samsungBrowserMatch)
+    // alert(samsungBrowserMatch)
 
     if (samsungBrowserMatch) {
       setSamsungVersion(samsungBrowserMatch[1]); // Extracts the version number
-      alert(samsungBrowserMatch[1])
+      // alert(samsungBrowserMatch[1]) //26.0
+      if(parseFloat(samsungBrowserMatch[1])>25.0){
+        setIsSamsung(false);
+      }
     } else {
       setSamsungVersion('Version not detected');
     }
-    alert(samsungVersion)
+ 
   }, []);
   return (
     <div className="App" >
-     {/* {isSamsung&&isDarkMode?<Alert content="Your device is in dark mode" /> :null}
-    {!isSamsung ?<BackgroundVideo />:<Alert content="Use another browser to get better experience" />} */}
-    <Alert content={samsungVersion}/>
-    <BackgroundVideo />
+     {isSamsung&&isDarkMode?<Alert content="Your device is in dark mode" /> :null}
+    {!isSamsung ?<BackgroundVideo />:null}
+   
       <Navbar/>
       <Heading/>
       <AboutMe/>

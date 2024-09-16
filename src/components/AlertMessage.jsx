@@ -11,7 +11,7 @@ function AlertMessage({ type = "", content }) {
       messageApi.open({
         type: type,
         content: content,
-        duration: 0,
+        duration: 2,
       });
       isMessageShown.current = true; // Mark as shown
     }
