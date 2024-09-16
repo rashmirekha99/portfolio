@@ -49,8 +49,9 @@ function App() {
   
   return (
     <div className="App" >
-     {isDarkMode?<Alert content="Your device is in dark mode" /> :null}
-    {!isSamsung ?<BackgroundVideo />:null}
+     {/* {isSamsung&&isDarkMode?<Alert content="Your device is in dark mode" /> :null}
+    {!isSamsung ?<BackgroundVideo />:<Alert content="Use another browser to get better experience" />} */}
+    <BackgroundVideo />
       <Navbar/>
       <Heading/>
       <AboutMe/>
