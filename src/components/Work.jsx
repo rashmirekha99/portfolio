@@ -23,9 +23,9 @@ function Work() {
         <FadeInX delay={0.2} duration={0.8} side={100}>
           <div className="text-box">
             <h4>Intern Software Engineer</h4>
-            <p>Hasthiya IT I 2022 Dec-2023 June </p>
+            <p>Hasthiya IT </p>
 
-            <p>2As’ and 1B for IT, Econ, Accounting</p>
+            <p>Full Time | 2022 Dec-2023 June</p>
             <span className="right-container-arrow"></span>
           </div>
         </FadeInX>
