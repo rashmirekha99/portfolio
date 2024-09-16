@@ -80,13 +80,13 @@
 }
 @media (max-width:1000px) {
     .contact-image {
-        visibility: hidden;
-        width: 0%;
+        position: absolute;
+            visibility: hidden;
     }
 
     .form {
         width: 80vw;
-        margin: 0;
+        margin: 0 0 5rem 0;
         row-gap: 20px;
         /* border: none;
         border-radius: 0; */
@@ -114,10 +114,7 @@
 }
 
 @media (max-width:450px){
-    .contact-image{
-        
-        width: 0%;
-    }
+    
 
     .form{
         width: 100vw;
