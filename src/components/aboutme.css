@@ -32,7 +32,7 @@ margin-top: 10rem;
     align-items: center;
     
     float:right;
-    width: 50vw;
+    width: 45vw;
     height: 100vh;
   
     background-color: rgba(255, 255, 255, 0.65);
@@ -48,9 +48,9 @@ margin-top: 10rem;
 .about-me-content{
     /* background-color: var(--primary); */
     float: left;
-    width: 50vw;
+    width: 55vw;
     height: 100vh;
-    padding: 0 2.5rem 0 2.5rem;
+    padding: 0 2.5rem 0 5rem;
     text-align: justify;
     font-size: 18px;
     display: flex;
@@ -108,6 +108,8 @@ margin-top: 10rem;
         padding-bottom: 5vh;
         /* background-color: black; */
         height: max-content;
+        padding-left:2.5rem;
+        padding-right: 2.5rem;
     }
     .about-me-image{
         padding-top: 2rem;
@@ -131,6 +133,8 @@ margin-top: 10rem;
             font-size: small;
             padding-top: 2vh;
             height: max-content;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
 
                 .about-me{
@@ -139,6 +143,7 @@ margin-top: 10rem;
 
                 .about-me p{
                     line-height: 1.5;
+                    
                 }
                            
 
