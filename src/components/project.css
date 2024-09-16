@@ -202,6 +202,8 @@ animation: enlarge 0.5s ease forwards;
     .pop-up h1 {
             font-size: var(--mobile-heading-font);
             font-weight: bold;
+
+            text-align: center;
         }
     
         .project-text {
