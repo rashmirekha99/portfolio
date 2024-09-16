@@ -60,6 +60,7 @@ function App() {
 
     if (samsungBrowserMatch) {
       setSamsungVersion(samsungBrowserMatch[1]); // Extracts the version number
+      alert(samsungBrowserMatch[1])
     } else {
       setSamsungVersion('Version not detected');
     }
