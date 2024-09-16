@@ -43,12 +43,22 @@ function ContactMe() {
             <h1>Get in Touch</h1>
             <div>
               <p>Name</p>
-              <input type="text" placeholder="Enter your name" name="name" />
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name="name"
+                required
+              />
             </div>
 
             <div>
               <p>Email</p>
-              <input type="text" placeholder="Enter Email" name="email" />
+              <input
+                type="text"
+                placeholder="Enter your Email"
+                name="email"
+                required
+              />
             </div>
 
             <div>
@@ -58,6 +68,7 @@ function ContactMe() {
                 placeholder="Type Message"
                 cols={4}
                 name="message"
+                required
               />
             </div>
             <button>Send</button>

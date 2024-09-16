@@ -46,14 +46,21 @@ function App() {
     }
   }, []);
 
-   const [samsungVersion, setSamsungVersion] = useState(null);
+
+
+  const [samsungVersion, setSamsungVersion] = useState(null);
 
   useEffect(() => {
     const userAgent = navigator.userAgent;
+    console.log('User Agent:', userAgent); // For debugging
+
+    // Refined regex pattern to capture Samsung Internet version
     const samsungBrowserMatch = userAgent.match(/SamsungBrowser\/([\d.]+)/);
 
     if (samsungBrowserMatch) {
       setSamsungVersion(samsungBrowserMatch[1]); // Extracts the version number
+    } else {
+      setSamsungVersion('Version not detected');
     }
   }, []);
   return (
