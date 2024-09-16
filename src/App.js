@@ -14,20 +14,20 @@ import ContactMe from './components/ContactMe';
 
 
 function App() {
-  const [isSamsung, setIsSamsung] = useState(false);
+  // const [isSamsung, setIsSamsung] = useState(false);
 
-  useEffect(() => {
-    const userAgent = navigator.userAgent;
-    if (/SamsungBrowser/.test(userAgent)) {
-      setIsSamsung(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const userAgent = navigator.userAgent;
+  //   if (/SamsungBrowser/.test(userAgent)) {
+  //     setIsSamsung(true);
+  //   }
+  // }, []);
 
-  if (isSamsung) {
-    // Optionally, redirect or display a message
-    // window.location.href = 'https://example.com'; // Redirect to another page
-    return <div>Please use a different browser to access this website.</div>;
-  }
+  // if (isSamsung) {
+  //   // Optionally, redirect or display a message
+  //   // window.location.href = 'https://example.com'; // Redirect to another page
+  //   return <div>Please use a different browser to access this website.</div>;
+  // }
   return (
     <div className="App">
        <BackgroundVideo/>
