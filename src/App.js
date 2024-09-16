@@ -48,7 +48,7 @@ function App() {
 
 
 
-  const [samsungVersion, setSamsungVersion] = useState(null);
+  const [samsungVersion, setSamsungVersion] = useState("initial");
 
   useEffect(() => {
     const userAgent = navigator.userAgent;
@@ -62,6 +62,7 @@ function App() {
     } else {
       setSamsungVersion('Version not detected');
     }
+    alert(samsungVersion)
   }, []);
   return (
     <div className="App" >
