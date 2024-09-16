@@ -7,3 +7,8 @@
     --font-color:black;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+    --font-color: black;
+    }
+}
