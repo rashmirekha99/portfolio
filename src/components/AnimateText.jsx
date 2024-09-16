@@ -10,8 +10,8 @@ const TextChanger = () => {
   return (
     <div className="text-container">
       <h1>
-        <span class="text_1"> &nbsp; Software Engineer</span>
-        <span class="text_2">&nbsp; Mobile Developer</span>
+        <span class="text_1"> &nbsp;Software Engineer</span>
+        <span class="text_2">&nbsp;Mobile Developer</span>
       </h1>
     </div>
   );

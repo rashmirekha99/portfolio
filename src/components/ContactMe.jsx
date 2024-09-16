@@ -54,7 +54,7 @@ function ContactMe() {
             <div>
               <p>Email</p>
               <input
-                type="text"
+                type="email"
                 placeholder="Enter your Email"
                 name="email"
                 required

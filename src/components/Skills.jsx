@@ -9,6 +9,7 @@ import flutter from "../assets/img/technologies/flutter.png";
 import python from "../assets/img/technologies/python.png";
 import mysql from "../assets/img/technologies/my-sql.png";
 import css from "../assets/img/technologies/css.png";
+import mongodb from "../assets/img/technologies/mongodb.png";
 // tools
 import jira from "../assets/img/technologies/jira.png";
 import figma from "../assets/img/technologies/figma.png";
@@ -17,6 +18,9 @@ import github from "../assets/img/technologies/github.png";
 import netbeans from "../assets/img/technologies/netbeans.png";
 import photoshop from "../assets/img/technologies/photoshop.png";
 import androidstudio from "../assets/img/technologies/android studio.png";
+import firebase from "../assets/img/technologies/firebase.png";
+
+import git from "../assets/img/technologies/git.png";
 import "./skills.css";
 import LangContainer from "./LangContainer";
 import { FadeInY } from "./animation/Animations";
@@ -49,8 +53,9 @@ function AboutUs() {
           <LangContainer img={react} lang="React" />
           <LangContainer img={flutter} lang="Flutter" />
           <LangContainer img={python} lang="Python" />
-          <LangContainer img={mysql} lang="My SQL" />
-          <LangContainer img={mysql} lang="My SQL" />
+          <LangContainer img={firebase} lang="Firebase" />
+          <LangContainer img={mysql} lang="MySQL" />
+          {/* <LangContainer img={mongodb} lang="MongoDB" /> */}
           {/* </div> */}
         </div>
       </FadeInY>
@@ -67,9 +72,9 @@ function AboutUs() {
           <LangContainer img={figma} lang="Figma" />
           <LangContainer img={github} lang="Github" />
           <LangContainer img={androidstudio} lang="Android Studio" />
-          <LangContainer img={python} lang="Python" />
-          <LangContainer img={mysql} lang="My SQL" />
-          <LangContainer img={mysql} lang="My SQL" />
+          <LangContainer img={git} lang="Git" />
+          {/* <LangContainer img={mysql} lang="My SQL" />
+          <LangContainer img={mysql} lang="My SQL" /> */}
           {/* </div> */}
         </div>
       </FadeInY>

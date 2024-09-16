@@ -72,7 +72,13 @@ font-size: 18px;
 .lang-container img{
     width: 5vw;
 }
+.tools {
 
+    
+    grid-template-columns: repeat(4, auto);
+   
+
+}
 @media (max-width:1000px){
 /* .lang-container{
     margin: 3rem;
@@ -80,7 +86,9 @@ font-size: 18px;
 
 .tools{
     margin-top: 4rem;
+    
 }
+
 
 
 
