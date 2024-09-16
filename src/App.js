@@ -11,11 +11,33 @@ import Footer from './components/Footer';
 import Qualifications from './components/Qualifications';
 import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
+import Alert from './components/AlertMessage';
+
 
 
 
 function App() {
   const [isSamsung, setIsSamsung] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+ useEffect(() => {
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    // Set the initial state
+    setIsDarkMode(darkModeMediaQuery.matches);
+
+    // Event listener to update state on change
+    const handleChange = (event) => {
+      setIsDarkMode(event.matches);
+    };
+
+    darkModeMediaQuery.addEventListener('change', handleChange);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      darkModeMediaQuery.removeEventListener('change', handleChange);
+    };
+  }, []);
+    console.log(isDarkMode);
 
   useEffect(() => {
     const userAgent = navigator.userAgent;
@@ -27,8 +49,8 @@ function App() {
   
   return (
     <div className="App" >
-      
-    {!isSamsung?<BackgroundVideo />:null}
+     {isSamsung&&isDarkMode?<Alert content="Your device is in dark mode" /> :null}
+    {!isSamsung || !isDarkMode?<BackgroundVideo />:null}
       <Navbar/>
       <Heading/>
       <AboutMe/>

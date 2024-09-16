@@ -19,7 +19,7 @@ function Projects() {
       about:
         "A restaurant management system which can manage orders,delivery, offers, kitchen through one system. ",
       role: "Management Functionality Development",
-      technologies: "ReactJs (web) + Firebase +Flutter(mobile)",
+      technologies: "ReactJs (with Ant Design) + Firebase +Flutter(mobile)",
       responsibilities: [
         "Orders Read, Orders status update",
         "Delivery tracking",
