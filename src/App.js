@@ -1,7 +1,7 @@
 
 import './navbar.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState,useEffect } from 'react';
-
 import Navbar from './components/Navbar';
 import BackgroundVideo from './components/BackgroundVideo';
 import Heading from './components/Heading';
@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 import Qualifications from './components/Qualifications';
 import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
-import backgroundVideo from "./assets/img/video.mp4";
+
 
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App" >
       
-     {!isSamsung? <BackgroundVideo />:null}
+    {!isSamsung?<BackgroundVideo />:null}
       <Navbar/>
       <Heading/>
       <AboutMe/>
