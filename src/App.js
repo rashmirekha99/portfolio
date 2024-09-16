@@ -52,10 +52,11 @@ function App() {
 
   useEffect(() => {
     const userAgent = navigator.userAgent;
-    console.log('User Agent:', userAgent); // For debugging
+    alert('User Agent:', userAgent); // For debugging
 
     // Refined regex pattern to capture Samsung Internet version
     const samsungBrowserMatch = userAgent.match(/SamsungBrowser\/([\d.]+)/);
+    alert(samsungBrowserMatch)
 
     if (samsungBrowserMatch) {
       setSamsungVersion(samsungBrowserMatch[1]); // Extracts the version number

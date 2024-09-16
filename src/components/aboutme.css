@@ -136,6 +136,10 @@ margin-top: 10rem;
                 .about-me{
                     height: max-content;
                 }
+
+                .about-me p{
+                    line-height: 1.2;
+                }
                            
 
 }
