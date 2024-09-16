@@ -20,7 +20,7 @@ body {
 }
 
 .content p:first-child{
-    
+    color: var(--font-color);
     font-size: 3rem;
 }
 
@@ -43,8 +43,13 @@ color: rgb(0, 0, 0);
   
     
 }
+
+.content p{
+    color: var(--font-color);
+}
 .content h1{
     font-weight: bold;
+    color: var(--font-color);
 }
 .content button{
     background:var(--primary);
