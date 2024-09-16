@@ -46,11 +46,21 @@ function App() {
     }
   }, []);
 
-  
+   const [samsungVersion, setSamsungVersion] = useState(null);
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent;
+    const samsungBrowserMatch = userAgent.match(/SamsungBrowser\/([\d.]+)/);
+
+    if (samsungBrowserMatch) {
+      setSamsungVersion(samsungBrowserMatch[1]); // Extracts the version number
+    }
+  }, []);
   return (
     <div className="App" >
      {/* {isSamsung&&isDarkMode?<Alert content="Your device is in dark mode" /> :null}
     {!isSamsung ?<BackgroundVideo />:<Alert content="Use another browser to get better experience" />} */}
+    <Alert content={samsungVersion}/>
     <BackgroundVideo />
       <Navbar/>
       <Heading/>
