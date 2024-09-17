@@ -62,9 +62,9 @@ function App() {
     if (samsungBrowserMatch) {
       setSamsungVersion(samsungBrowserMatch[1]); // Extracts the version number
       // alert(samsungBrowserMatch[1]) //26.0
-      if(parseFloat(samsungBrowserMatch[1])>25.0){
-        setIsSamsung(false);
-      }
+      // if(parseFloat(samsungBrowserMatch[1])>25.0){
+      //   setIsSamsung(false);
+      // }
     } else {
       setSamsungVersion('Version not detected');
     }
@@ -72,9 +72,9 @@ function App() {
   }, []);
   return (
     <div className="App" >
-     {isSamsung&&isDarkMode?<Alert content="Your device is in dark mode" /> :null}
+     {/* {isSamsung?<Alert content="You are in dark mode" />:null} */}
     {!isSamsung ?<BackgroundVideo />:null}
-   
+   {/* <BackgroundVideo /> */}
       <Navbar/>
       <Heading/>
       <AboutMe/>
