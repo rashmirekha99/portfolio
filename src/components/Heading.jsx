@@ -4,7 +4,7 @@ import "./heading.css";
 import img from "../assets/img/photo.png";
 import TextChanger from "./AnimateText";
 
-function Heading() {
+function Heading({ onImageLoad, handleImageError }) {
   return (
     <div className="main" id="home">
       <motion.img
@@ -18,6 +18,8 @@ function Heading() {
         }}
         src={img}
         alt="logo"
+        onLoad={onImageLoad}
+        onError={handleImageError}
       />
       <motion.div
         initial={{ x: 100, opacity: 0 }}

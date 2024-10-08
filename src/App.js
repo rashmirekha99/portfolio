@@ -1,5 +1,6 @@
 
 import './navbar.css';
+import '../src/components/loadingspinner.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState,useEffect } from 'react';
 import Navbar from './components/Navbar';
@@ -11,12 +12,24 @@ import Footer from './components/Footer';
 import Qualifications from './components/Qualifications';
 import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
-import Alert from './components/AlertMessage';
+
 
 
 
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  // Function to handle image load
+  const handleImageLoad = () => {
+    console.log("Loading stopped");
+    setLoading(false);
+  };
+
+  const handleImageError = () => {
+    console.error("Image failed to load.");
+    setLoading(false); // Stop loading even if the image fails
+};
   const [isSamsung, setIsSamsung] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
  useEffect(() => {
@@ -72,18 +85,28 @@ function App() {
   }, []);
   return (
     <div className="App" >
-     {/* {isSamsung?<Alert content="You are in dark mode" />:null} */}
-    {!isSamsung ?<BackgroundVideo />:null}
+     {/* Loading Screen */}
+      {loading && (
+        <div className="loading-overlay">
+          <div className="loader"></div> 
+        </div>
+      )}
+    {!isSamsung && !loading ?<BackgroundVideo />:null}
+    
    {/* <BackgroundVideo /> */}
-      <Navbar/>
-      <Heading/>
-      <AboutMe/>
-      <Qualifications/>
-      <Skills/>
-      <Projects/>
-      <ContactMe/>
-      <Footer/>
-      
+   <Heading onImageLoad={handleImageLoad} handleImageError={handleImageError}/>
+     {!loading && (
+  <>
+    <Navbar />
+    
+    <AboutMe />
+    <Qualifications />
+    <Skills />
+    <Projects />
+    <ContactMe />
+    <Footer />
+  </>
+)}
       
     </div>
   );
