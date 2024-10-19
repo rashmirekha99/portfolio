@@ -9,7 +9,10 @@ import flutter from "../assets/img/technologies/flutter.png";
 import python from "../assets/img/technologies/python.png";
 import mysql from "../assets/img/technologies/my-sql.png";
 import css from "../assets/img/technologies/css.png";
-import mongodb from "../assets/img/technologies/mongodb.png";
+import mongodb from "../assets/img/technologies/mongodb.svg";
+import tailwind from "../assets/img/technologies/tailwind.png";
+import nodeJS from "../assets/img/technologies/node.png";
+import expressJs from "../assets/img/technologies/express.png";
 // tools
 import jira from "../assets/img/technologies/jira.png";
 import figma from "../assets/img/technologies/figma.png";
@@ -18,7 +21,11 @@ import github from "../assets/img/technologies/github.png";
 import netbeans from "../assets/img/technologies/netbeans.png";
 import photoshop from "../assets/img/technologies/photoshop.png";
 import androidstudio from "../assets/img/technologies/android studio.png";
+import vs from "../assets/img/technologies/vs.png";
+import postman from "../assets/img/technologies/postman.svg";
 import firebase from "../assets/img/technologies/firebase.png";
+import vercel from "../assets/img/technologies/vercel.svg";
+import netlify from "../assets/img/technologies/netlify.png";
 
 import git from "../assets/img/technologies/git.png";
 import "./skills.css";
@@ -50,12 +57,15 @@ function AboutUs() {
           <LangContainer img={html} lang="HTML" />
           <LangContainer img={css} lang="CSS" />
           <LangContainer img={js} lang="Javascript" />
-          <LangContainer img={react} lang="React" />
+          <LangContainer img={react} lang="ReactJS" />
           <LangContainer img={flutter} lang="Flutter" />
           <LangContainer img={python} lang="Python" />
           <LangContainer img={firebase} lang="Firebase" />
           <LangContainer img={mysql} lang="MySQL" />
-          {/* <LangContainer img={mongodb} lang="MongoDB" /> */}
+          <LangContainer img={mongodb} lang="MongoDB" />
+          <LangContainer img={tailwind} lang="Tailwind CSS" />
+          <LangContainer img={nodeJS} lang="NodeJS" />
+          <LangContainer img={expressJs} lang="ExpressJS" />
           {/* </div> */}
         </div>
       </FadeInY>
@@ -72,7 +82,11 @@ function AboutUs() {
           <LangContainer img={figma} lang="Figma" />
           <LangContainer img={github} lang="Github" />
           <LangContainer img={androidstudio} lang="Android Studio" />
+          <LangContainer img={vs} lang="VS Code" />
           <LangContainer img={git} lang="Git" />
+          <LangContainer img={postman} lang="Postman" />
+          <LangContainer img={netlify} lang="Netlify" />
+          <LangContainer img={vercel} lang="Vercel" />
           {/* <LangContainer img={mysql} lang="My SQL" />
           <LangContainer img={mysql} lang="My SQL" /> */}
           {/* </div> */}

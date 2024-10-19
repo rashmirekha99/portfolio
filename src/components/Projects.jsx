@@ -35,10 +35,11 @@ function Projects() {
       about:
         "A portfolio website that showcases my skills, experience, and background, offering a comprehensive view of who I am as a professional. It includes a responsive design, ensuring an optimal viewing experience on any device",
       role: "Develop Full Website",
-      technologies: "ReactJs",
+      technologies: "ReactJs, CSS, Netlify",
       responsibilities: [
         "Design the website",
         "Develop the website ensuring the responsiveness",
+        "Deploy the website in Netlify",
       ],
       group: false,
     },
