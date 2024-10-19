@@ -77,7 +77,7 @@ function ContactMe() {
         <div className="contact-image">
           <FadeInX delay={0.2} duration={0.2} side={100}>
             {" "}
-            <img src={img} alt="contact_image"></img>
+            <img src={img} alt="contact_image" loading="lazy"></img>
           </FadeInX>
         </div>
       </div>

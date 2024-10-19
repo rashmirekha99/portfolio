@@ -128,7 +128,7 @@ function Projects() {
                 setProjectClicked(true);
               }}
             >
-              <img src={web} alt="project"></img>
+              <img src={web} alt="project" loading="lazy"></img>
             </div>
           </FadeInY>
           <FadeInY delay={0.4} duration={0.5} side={100}>
@@ -139,7 +139,7 @@ function Projects() {
                 setProjectClicked(true);
               }}
             >
-              <img src={portfolio} alt="project"></img>
+              <img src={portfolio} alt="project" loading="lazy"></img>
             </div>
           </FadeInY>
           <FadeInY delay={0.2} duration={0.3} side={100}>
@@ -150,7 +150,7 @@ function Projects() {
                 setProjectClicked(true);
               }}
             >
-              <img src={img} alt="project"></img>
+              <img src={img} alt="project" loading="lazy"></img>
               <div className="overlay">
                 <p>mbsdhfvshvfvasjvfjhas</p>
               </div>
@@ -164,7 +164,7 @@ function Projects() {
                 setProjectClicked(true);
               }}
             >
-              <img src={bookswan} alt="project"></img>
+              <img src={bookswan} alt="project" loading="lazy"></img>
             </div>
           </FadeInY>
           <FadeInY delay={0.6} duration={0.4} side={100}>
@@ -175,7 +175,7 @@ function Projects() {
                 setProjectClicked(true);
               }}
             >
-              <img src={grocery} alt="project"></img>
+              <img src={grocery} alt="project" loading="lazy"></img>
             </div>
           </FadeInY>
           <FadeInY delay={0.2} duration={0.3} side={100}>
@@ -186,7 +186,7 @@ function Projects() {
                 setProjectClicked(true);
               }}
             >
-              <img src={cleanConnect} alt="project"></img>
+              <img src={cleanConnect} alt="project" loading="lazy"></img>
             </div>
           </FadeInY>
           <FadeInY delay={0.3} duration={0.4} side={100}>
@@ -197,7 +197,7 @@ function Projects() {
                 setProjectClicked(true);
               }}
             >
-              <img src={pawprint} alt="project"></img>
+              <img src={pawprint} alt="project" loading="lazy"></img>
             </div>
           </FadeInY>
         </div>
