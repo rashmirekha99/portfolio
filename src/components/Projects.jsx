@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./project.css";
 import img from "../assets/img/projects/foodmania.jpg";
+import web from "../assets/img/projects/webApplication.jpg";
 import bookswan from "../assets/img/projects/bookswan.jpg";
 import grocery from "../assets/img/projects/groceryListing.jpg";
 import cleanConnect from "../assets/img/projects/cleanConnect.jpg";
@@ -9,11 +10,38 @@ import portfolio from "../assets/img/projects/portfolio.jpg";
 
 import { IoCloseSharp } from "react-icons/io5";
 import { FadeInX, FadeInY } from "./animation/Animations";
+import { BiBold } from "react-icons/bi";
 
 function Projects() {
   const [isProjectClicked, setProjectClicked] = useState(false);
   const [projectNo, setProjectNo] = useState();
   const ProjectDetails = [
+    {
+      name: "Web Application",
+      about:
+        "A web application to showcase products, get client inquiries, and provide an admin panel for efficient data management",
+      role: " Full Stack Development",
+      technologies: " NextJS ,Tailwind CSS, ExpressJs, MongoDB, Vercel ",
+      responsibilities: [
+        "Design the UIs",
+        "Develop the UIs ensuring responsiveness ",
+        "Develop Admin Panel to manage website data",
+        "Develop the backend and integrated APIs in website and Admin Panel",
+        "Deploy developed application in Vercel",
+      ],
+    },
+    {
+      name: "Portfolio Website",
+      about:
+        "A portfolio website that showcases my skills, experience, and background, offering a comprehensive view of who I am as a professional. It includes a responsive design, ensuring an optimal viewing experience on any device",
+      role: "Develop Full Website",
+      technologies: "ReactJs",
+      responsibilities: [
+        "Design the website",
+        "Develop the website ensuring the responsiveness",
+      ],
+      group: false,
+    },
     {
       name: "Restaurant Management System",
       about:
@@ -70,18 +98,6 @@ function Projects() {
       technologies: "Flutter",
       responsibilities: ["Convert Figma Design to code", "API Integration"],
     },
-    {
-      name: "Portfolio Website",
-      about:
-        "A portfolio website that showcases my skills, experience, and background, offering a comprehensive view of who I am as a professional. It includes a responsive design, ensuring an optimal viewing experience on any device",
-      role: "Develop Full Website",
-      technologies: "ReactJs",
-      responsibilities: [
-        "Design the website",
-        "Develop the website ensuring the responsiveness",
-      ],
-      group: false,
-    },
   ];
 
   return (
@@ -111,6 +127,28 @@ function Projects() {
                 setProjectClicked(true);
               }}
             >
+              <img src={web} alt="project"></img>
+            </div>
+          </FadeInY>
+          <FadeInY delay={0.4} duration={0.5} side={100}>
+            <div
+              class="item"
+              onClick={() => {
+                setProjectNo(1);
+                setProjectClicked(true);
+              }}
+            >
+              <img src={portfolio} alt="project"></img>
+            </div>
+          </FadeInY>
+          <FadeInY delay={0.2} duration={0.3} side={100}>
+            <div
+              class="item"
+              onClick={() => {
+                setProjectNo(2);
+                setProjectClicked(true);
+              }}
+            >
               <img src={img} alt="project"></img>
               <div className="overlay">
                 <p>mbsdhfvshvfvasjvfjhas</p>
@@ -121,7 +159,7 @@ function Projects() {
             <div
               class="item"
               onClick={() => {
-                setProjectNo(1);
+                setProjectNo(3);
                 setProjectClicked(true);
               }}
             >
@@ -132,7 +170,7 @@ function Projects() {
             <div
               class="item"
               onClick={() => {
-                setProjectNo(2);
+                setProjectNo(4);
                 setProjectClicked(true);
               }}
             >
@@ -143,7 +181,7 @@ function Projects() {
             <div
               class="item"
               onClick={() => {
-                setProjectNo(3);
+                setProjectNo(5);
                 setProjectClicked(true);
               }}
             >
@@ -154,22 +192,11 @@ function Projects() {
             <div
               class="item"
               onClick={() => {
-                setProjectNo(4);
+                setProjectNo(6);
                 setProjectClicked(true);
               }}
             >
               <img src={pawprint} alt="project"></img>
-            </div>
-          </FadeInY>
-          <FadeInY delay={0.4} duration={0.5} side={100}>
-            <div
-              class="item"
-              onClick={() => {
-                setProjectNo(5);
-                setProjectClicked(true);
-              }}
-            >
-              <img src={portfolio} alt="project"></img>
             </div>
           </FadeInY>
         </div>
@@ -186,7 +213,9 @@ function Projects() {
 
           <h1>{ProjectDetails[projectNo].name}</h1>
           <p style={{ color: "grey", paddingTop: 0 }}>
-            {projectNo == 5 ? "Individual Project" : "Group Project"}
+            {projectNo == 0 || projectNo == 1
+              ? "Individual Project"
+              : "Group Project"}
           </p>
           <p>
             <span className="project-text">About Project:</span>{" "}
@@ -210,6 +239,12 @@ function Projects() {
                 <p>{res}</p>
               </li>
             ))}
+            <p style={{ fontStyle: "bold" }}>
+              Link To The Wesite :{" "}
+              <a href="https://www.nrcbaggage.lk/" target="_blank">
+                www.nrcbaggage.lk
+              </a>
+            </p>
           </ul>
         </alert>
       ) : null}
