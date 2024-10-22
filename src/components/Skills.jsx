@@ -13,6 +13,7 @@ import mongodb from "../assets/img/technologies/mongodb.svg";
 import tailwind from "../assets/img/technologies/tailwind.png";
 import nodeJS from "../assets/img/technologies/node.png";
 import expressJs from "../assets/img/technologies/express.png";
+import nextjs from "../assets/img/technologies/nextjs.svg";
 // tools
 import jira from "../assets/img/technologies/jira.png";
 import figma from "../assets/img/technologies/figma.png";
@@ -66,6 +67,7 @@ function AboutUs() {
           <LangContainer img={tailwind} lang="Tailwind CSS" />
           <LangContainer img={nodeJS} lang="NodeJS" />
           <LangContainer img={expressJs} lang="ExpressJS" />
+          <LangContainer img={nextjs} lang="NextJS" />
           {/* </div> */}
         </div>
       </FadeInY>
