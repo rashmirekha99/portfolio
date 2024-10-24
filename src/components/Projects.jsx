@@ -240,12 +240,14 @@ function Projects() {
                 <p>{res}</p>
               </li>
             ))}
-            <p style={{ fontStyle: "bold" }}>
-              Link To The Wesite :{" "}
-              <a href="https://www.nrcbaggage.lk/" target="_blank">
-                www.nrcbaggage.lk
-              </a>
-            </p>
+            {projectNo == 0 ? (
+              <p style={{ fontStyle: "bold" }}>
+                Link To The Wesite :{" "}
+                <a href="https://www.nrcbaggage.lk/" target="_blank">
+                  www.nrcbaggage.lk
+                </a>
+              </p>
+            ) : null}
           </ul>
         </alert>
       ) : null}
