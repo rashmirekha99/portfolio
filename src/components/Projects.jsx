@@ -44,16 +44,12 @@ function Projects() {
       group: false,
     },
     {
-      name: "Restaurant Management System",
+      name: "PAWPRINTID",
       about:
-        "A restaurant management system which can manage orders,delivery, offers, kitchen through one system. ",
-      role: "Management Functionality Development",
-      technologies: "ReactJs (with Ant Design) + Firebase +Flutter(mobile)",
-      responsibilities: [
-        "Orders Read, Orders status update",
-        "Delivery tracking",
-        "Offers creation",
-      ],
+        "A system that allows pet owners to track their pets' vaccinations, health, and other important details.",
+      role: "Frontend Development",
+      technologies: "Flutter",
+      responsibilities: ["Convert Figma Design to code", "API Integration"],
     },
     {
       name: "Book Swan App",
@@ -91,13 +87,18 @@ function Projects() {
         "Firebase integration",
       ],
     },
+
     {
-      name: "PAWPRINTID",
+      name: "Restaurant Management System",
       about:
-        "A system that allows pet owners to track their pets' vaccinations, health, and other important details.",
-      role: "Frontend Development",
-      technologies: "Flutter",
-      responsibilities: ["Convert Figma Design to code", "API Integration"],
+        "A restaurant management system which can manage orders,delivery, offers, kitchen through one system. ",
+      role: "Management Functionality Development",
+      technologies: "ReactJs (with Ant Design) + Firebase +Flutter(mobile)",
+      responsibilities: [
+        "Orders Read, Orders status update",
+        "Delivery tracking",
+        "Offers creation",
+      ],
     },
   ];
 
@@ -150,7 +151,7 @@ function Projects() {
                 setProjectClicked(true);
               }}
             >
-              <img src={img} alt="project" loading="lazy"></img>
+              <img src={pawprint} alt="project" loading="lazy"></img>
               <div className="overlay">
                 <p>mbsdhfvshvfvasjvfjhas</p>
               </div>
@@ -197,7 +198,7 @@ function Projects() {
                 setProjectClicked(true);
               }}
             >
-              <img src={pawprint} alt="project" loading="lazy"></img>
+              <img src={img} alt="project" loading="lazy"></img>
             </div>
           </FadeInY>
         </div>
